@@ -1,0 +1,17 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api-proxy/facebook/:path*",
+      "destination": "https://graph.facebook.com/:path*"
+    },
+    {
+      "source": "/api-proxy/instagram/:path*",
+      "destination": "https://graph.instagram.com/:path*"
+    },
+    {
+      "source": "/((?!api-proxy/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
